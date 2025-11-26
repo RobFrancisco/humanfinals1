@@ -1,38 +1,66 @@
-import { Carousel } from "@material-tailwind/react";
- 
-export function CarouselCustomNavigation() {
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+
+export default function AutoCarousel() {
+  const slides = [
+    {
+      img: "/assets/Baldur's Gate.png",
+      title: "Baldur's Gate 3",
+      description: "An epic RPG adventure set in the Forgotten Realms.",
+      price: "$59.99",
+    },
+    {
+      img: "/assets/DMC 5.png",
+      title: "Devil May Cry 5",
+      description: "Fast-paced hack and slash action with stunning visuals.",
+      price: "$39.99",
+    },
+    {
+      img: "/assets/Elden Ring.png",
+      title: "Elden Ring",
+      description: "Explore a vast open world crafted by FromSoftware.",
+      price: "$69.99",
+    },
+    {
+      img: "/assets/Hogwarts Legacy.png",
+      title: "Hogwarts Legacy",
+      description: "Live your wizarding dream in the Harry Potter universe.",
+      price: "$49.99",
+    },
+  ];
+
   return (
-    <Carousel
-      className="rounded-xl"
-      navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-          {new Array(length).fill("").map((_, i) => (
-            <span
-              key={i}
-              className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-              }`}
-              onClick={() => setActiveIndex(i)}
-            />
-          ))}
-        </div>
-      )}
-    >
-      <img
-        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-        alt="image 1"
-        className="h-full w-full object-cover"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-        alt="image 2"
-        className="h-full w-full object-cover"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-        alt="image 3"
-        className="h-full w-full object-cover"
-      />
-    </Carousel>
+    <div className="relative w-3/4 mx-auto px-12"> {/* 👈 wrapper with relative */}
+      <Swiper
+        modules={[Autoplay, Navigation]}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        navigation={true}
+        loop={true}
+        className="h-64 sm:h-96 rounded-lg"
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div className="flex flex-col sm:flex-row items-center justify-center h-full gap-6 p-4">
+              {/* Image */}
+              <img
+                src={slide.img}
+                alt={slide.title}
+                className="w-full sm:w-1/2 h-full object-cover rounded-lg"
+              />
+
+              {/* Text */}
+              <div className="sm:w-1/2 text-center sm:text-left">
+                <h2 className="text-xl font-bold mb-2">{slide.title}</h2>
+                <p className="text-gray-600 mb-2">{slide.description}</p>
+                <span className="text-lg font-semibold text-green-600">
+                  {slide.price}
+                </span>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }
