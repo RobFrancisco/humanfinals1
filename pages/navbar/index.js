@@ -15,10 +15,10 @@ export default function Navbar() {
     }, [])
 
     return (
-        <nav className="flex items-center justify-between flex-wrap bg-white py-4 lg:px-12 shadow border-solid border-t-2 border-blue-700">
+        <nav className="flex items-center justify-between flex-wrap py-4 lg:px-12 shadow border-solid border-t-2" style={{ backgroundColor: '#253047ff', borderTopColor: '#66c0f4' }}>
             <div className="flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0">
-                <div className="flex items-center flex-shrink-0 text-gray-800 mr-16">
-                    <span className="font-semibold text-xl tracking-tight">Game Engine</span>
+                <div className="flex items-center flex-shrink-0 mr-16" style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>
+                    <span className="font-semibold text">Game Engine</span>
                 </div>
                 <div className="block lg:hidden ">
                     <button
@@ -37,21 +37,22 @@ export default function Navbar() {
                     
                     {/* Dropdown for Menu 3 */}
                     <div ref={dropdownRef} className="relative inline-block text-left">
-                        <button
+                       <button
                             onClick={() => setOpen(!open)}
                             aria-haspopup="true"
                             aria-expanded={open}
                             className={`block mt-4 lg:inline-flex lg:items-center lg:mt-0 px-4 py-2 rounded mr-2 font-bold ${
-                                open ? 'bg-blue-700 text-white' : 'hover:text-white hover:bg-blue-700 text-blue-700'
-                            }`}>
+                                open ? 'text-white' : 'hover:text-white'
+                            }`}
+                            style={{ backgroundColor: open ? '#00adee' : 'transparent', color: open ? 'white' : '#29edb6ff', fontFamily:'Comic Sans MS' }}>
+                            
                             Browse
                             <svg className="ml-2 h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.06a.75.75 0 011.08 1.04l-4.25 4.65a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                             </svg>
                         </button>
-
                         {open && (
-                            <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-20">
+                            <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg  ring-1 ring-black ring-opacity-5 z-20" style={{backgroundColor:'#ebe8f4ac'}}>
                                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                     <a href="#opt1" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Sale and Discount</a>
                                     <a href="#opt2" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Pons Choice</a>
@@ -60,14 +61,15 @@ export default function Navbar() {
                             </div>
                         )}
                     </div>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">
-                        About
-                    </a>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">
-                        Support
-                    </a>
+                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded mr-2"
+                    style={{ backgroundColor: '#253047ff', color: '#29edb6ff', fontFamily:'Comic Sans MS' }}
+                    onMouseEnter={(e) => e.target.style.backgroundColor = '#00adee'}
+                    onMouseLeave={(e) => e.target.style.backgroundColor = '#253047ff'}>About</a>
+                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded mr-2"
+                    style={{ backgroundColor: '#253047ff', color: '#29edb6ff', fontFamily:'Comic Sans MS' }}
+                    onMouseEnter={(e) => e.target.style.backgroundColor = '#00adee'}
+                    onMouseLeave={(e) => e.target.style.backgroundColor = '#253047ff'}>Support</a>
                 </div>
-
                 <div className="relative mx-auto text-gray-600 lg:block hidden">
                     <input
                         className="border-2 border-gray-300 bg-white h-10 pl-2 pr-8 rounded-lg text-sm focus:outline-none"
@@ -81,13 +83,11 @@ export default function Navbar() {
                         </svg>
                     </button>
                 </div>
-
                 <div className="flex ">
-                    <a href="#" className="block text-md px-4 py-2 rounded text-blue-700 ml-2 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0">
+                    <a href="#" className="block text-md px-4 py-2 rounded text-blue-700 ml-2 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0 "style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>
                         Sign in
                     </a>
-
-                    <a href="#" className="block text-md px-4 ml-2 py-2 rounded text-blue-700 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0">
+                    <a href="#" className="block text-md px-4 ml-2 py-2 rounded text-blue-700 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0" style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>
                         login
                     </a>
                 </div>
