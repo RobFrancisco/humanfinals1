@@ -1,11 +1,12 @@
 import React from 'react'
 import Carousel from '../carousel'
 import Image from 'next/image'
-export default function sales() {
+export default function Support() {
     return (
       <>
       <div style={{display: "flex", justifyContent: "center"}}>
-        <p style={{textAlign: "center"}} className="text-base font-normal text-gray-500 dark:text-gray-400"><br /><br />This is the sales<br /><br /></p>
+        <p style={{textAlign: "center"}} className="text-base font-normal text-gray-500 dark:text-gray-400"><br /><br />
+        This is the support page<br /><br /></p>
       </div>
     
       <div style={{display: "flex", justifyContent: "center"}}>

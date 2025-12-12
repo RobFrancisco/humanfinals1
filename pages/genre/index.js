@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from '../carousel'
 import Image from 'next/image'
-export default function PonsChoice() {
+export default function Genre() {
     return (
       <>
       <div style={{display: "flex", justifyContent: "center"}}>
