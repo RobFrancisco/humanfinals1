@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Hpto from './hpto'
 import Carousel from './carousel'
+import Gallery from './gallery'
 
 
 const geistSans = Geist({
@@ -19,6 +20,7 @@ export default function Home() {
 
       <Hpto />
       <Carousel />
+      <Gallery />
 
     </div>
   

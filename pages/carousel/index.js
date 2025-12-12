@@ -28,6 +28,12 @@ export default function AutoCarousel() {
       description: "Live your wizarding dream in the Harry Potter universe.",
       price: "$49.99",
     },
+    {
+      img: "/assets/Cyberpunk 2077.png",
+      title: "Cyberpunk 2077",
+      description: "An open-world action role-playing game set in the dystopian metropolis of Night City.",
+      price: "$54.99",
+    },
   ];
 
   return (

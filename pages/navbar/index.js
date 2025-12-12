@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import Link from 'next/link'
 
 export default function Navbar() {
     const [open, setOpen] = useState(false)
@@ -17,8 +18,9 @@ export default function Navbar() {
     return (
         <nav className="flex items-center justify-between flex-wrap py-4 lg:px-12 shadow border-solid border-t-2" style={{ backgroundColor: '#253047ff', borderTopColor: '#66c0f4' }}>
             <div className="flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0">
-                <div className="flex items-center flex-shrink-0 mr-16" style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>
-                    <span className="font-semibold text">Game Engine</span>
+                <div className="flex items-center flex-shrink-0 mr-16" style={{ color: '#d1d3d3dc', fontFamily: 'FF Din OT Bold' }}>
+                    <Link href="/"><img alt="gallery" className="h-15 w-15" src="/assets/xbox.png" /></Link>
+                    <Link href="/"><span  className="font-bold text">Game Engine</span></Link>
                 </div>
                 <div className="block lg:hidden ">
                     <button
@@ -54,9 +56,9 @@ export default function Navbar() {
                         {open && (
                             <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg  ring-1 ring-black ring-opacity-5 z-20" style={{backgroundColor:'#ebe8f4ac'}}>
                                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                    <a href="#opt1" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Sale and Discount</a>
-                                    <a href="#opt2" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Pons Choice</a>
-                                    <a href="#opt3" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Genre</a>
+                                    <a href="/sales" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Sale and Discount</a>
+                                    <a href="/ponschoice" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Pons Choice</a>
+                                    <a href="/genre" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Genre</a>
                                 </div>
                             </div>
                         )}
