@@ -4,11 +4,11 @@ const footer = () => {
     return (
         <footer class="md:flex md:items-center md:justify-between shadow rounded-lg p-4 md:p-6 xl:p-8 my-6 mx-4" style={{ backgroundColor: '#253047ff' }}>
             <ul class="flex items-center flex-wrap mb-6 md:mb-0">
-                <li><a href="#" class="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6" 
+                <li><a href="https://youtu.be/w79DzwIb8pU?si=UZ5qZFQECf7H5PWV" class="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6" 
                 style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Terms and conditions</a>
                 </li>
-                <li><a href="#" class="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6" style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Privacy Policy</a></li>
-                <li><a href="#" class="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6"style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Licensing</a></li>
+                <li><a href="https://youtu.be/ZzH5JNe6YFg?si=p3UzJwlxSojHF4ts" class="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6" style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Privacy Policy</a></li>
+                <li><a href="https://youtu.be/8wmmQ6klKVw?si=ZE4uP-MVIL_lNH4f" class="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6"style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Licensing</a></li>
                 <li><a href="https://www.bettycrocker.com/recipes/homemade-chocolate-chip-cookies/77c14e03-d8b0-4844-846d-f19304f61c57" class="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6"style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Cookie Policy</a></li>
                 <li><a href="https://youtu.be/VLP_tnnDGSQ?si=dOAuXiJAuuo-65Fb" class="text-sm font-normal text-gray-500 hover:underline"style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Contact</a></li>
             </ul>
