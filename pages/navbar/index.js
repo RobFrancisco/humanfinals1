@@ -56,7 +56,7 @@ export default function Navbar() {
                         {open && (
                             <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg  ring-1 ring-black ring-opacity-5 z-20" style={{backgroundColor:'#ebe8f4ac'}}>
                                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                    <a href="/sales" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Sale and Discount</a>
+                                    <a href="/discount" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Sale and Discount</a>
                                     <a href="/ponschoice" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Pons Choice</a>
                                     <a href="/genre" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-700 hover:text-white" role="menuitem">Genre</a>
                                 </div>
