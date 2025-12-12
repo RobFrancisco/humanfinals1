@@ -18,7 +18,7 @@ export default function Navbar() {
         <nav className="flex items-center justify-between flex-wrap py-4 lg:px-12 shadow border-solid border-t-2" style={{ backgroundColor: '#253047ff', borderTopColor: '#66c0f4' }}>
             <div className="flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0">
                 <div className="flex items-center flex-shrink-0 mr-16" style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>
-                    <span  className="font-semibold text">Game Engine</span>
+                  <a href="/home">Game Engine</a>
                 </div>
                 <div className="block lg:hidden ">
                     <button

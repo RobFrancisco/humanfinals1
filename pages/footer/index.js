@@ -9,8 +9,8 @@ const footer = () => {
                 </li>
                 <li><a href="#" class="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6" style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Privacy Policy</a></li>
                 <li><a href="#" class="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6"style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Licensing</a></li>
-                <li><a href="#" class="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6"style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Cookie Policy</a></li>
-                <li><a href="#" class="text-sm font-normal text-gray-500 hover:underline"style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Contact</a></li>
+                <li><a href="https://www.bettycrocker.com/recipes/homemade-chocolate-chip-cookies/77c14e03-d8b0-4844-846d-f19304f61c57" class="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6"style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Cookie Policy</a></li>
+                <li><a href="https://youtu.be/VLP_tnnDGSQ?si=dOAuXiJAuuo-65Fb" class="text-sm font-normal text-gray-500 hover:underline"style={{ color: '#d1d3d3dc', fontFamily: 'Comic Sans MS' }}>Contact</a></li>
             </ul>
             <div class="flex sm:justify-center space-x-6">
                 <a href="#" class="text-gray-500 hover:text-gray-900" style={{ color: '#5151cddc' }}>
