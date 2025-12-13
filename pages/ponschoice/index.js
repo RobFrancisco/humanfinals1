@@ -1,11 +1,13 @@
 import React from 'react'
 import Carousel from '../carousel'
 import Image from 'next/image'
+import Link from 'next/link'
+
 export default function PonsChoice() {
     return (
       <>
-      <div style={{display: "flex", justifyContent: "center"}}>
-      <p style={{textAlign: "center", color: '#d1d3d3dc', fontFamily: 'Comic Sans MS'}} className="text-base font-normal text-gray-500 dark:text-gray-400 "><br /><br />LIMBUS COMPANY<br /><br /></p>
+      <Link href="https://store.steampowered.com/app/1973530/Limbus_Company/"><div style={{display: "flex", justifyContent: "center"}}>
+      <p style={{textAlign: "center", color: '#012b2bdc', fontFamily: 'Comic Sans MS'}} className="text-base font-normal text-gray-500 dark:text-gray-400 "><br /><br />LIMBUS COMPANY<br /><br /></p>
       </div>
     
       <div style={{display: "flex", justifyContent: "center"}}>
@@ -14,7 +16,7 @@ export default function PonsChoice() {
       width="500" height="50"
       loading="eager"
       />
-      </div>
+      </div></Link>
       <div style={{display: "flex", justifyContent: "center"}}>
       <p style={{textAlign: "center"}} className="text-base font-normal text-gray-500 dark:text-gray-400"><br /><br />
        Limbus Company is a turn based Korean Horror Game rpg that takes place 
@@ -25,8 +27,8 @@ export default function PonsChoice() {
        never forget this motto as you move on your journey
         to <b>FACE THE SIN AND SAVE THE EGO<br/><br/><br/><br/><br/><br/></b></p> 
       </div>
-      <div style={{display: "flex", justifyContent: "center"}}>
-      <p style={{textAlign: "center", color: '#d1d3d3dc', fontFamily: 'Comic Sans MS'}} className="text-base font-normal text-gray-500 dark:text-gray-400 ">
+      <Link href="https://store.steampowered.com/app/3224770/Umamusume_Pretty_Derby/"><div style={{display: "flex", justifyContent: "center"}}>
+      <p style={{textAlign: "center", color: '#012b2bdc', fontFamily: 'Comic Sans MS'}} className="text-base font-normal text-gray-500 dark:text-gray-400 ">
         <br/><br />Umamusume Pretty Derby<br /><br /></p>
       </div>
       <div style={{display: "flex", justifyContent: "center"}}>
@@ -35,7 +37,7 @@ export default function PonsChoice() {
       width="500" height="50"
       loading="eager"
       />
-      </div>
+      </div></Link>
       <div style={{display: "flex", 
         justifyContent: "center"}}>
       <p style={{textAlign: 
@@ -49,8 +51,8 @@ export default function PonsChoice() {
      <b> MAKE SURE YOUR DAUGHTER WINS THE URA FINALE TORENAH</b> goodluck! 
        </p> 
      </div>
-      <div style={{display: "flex", justifyContent: "center"}}>
-      <p style={{textAlign: "center", color: '#d1d3d3dc', fontFamily: 'Comic Sans MS'}} className="text-base font-normal text-gray-500 dark:text-gray-400 ">
+      <Link href="https://store.steampowered.com/app/108600/Project_Zomboid/"><div style={{display: "flex", justifyContent: "center"}}>
+      <p style={{textAlign: "center", color: '#012b2bdc', fontFamily: 'Comic Sans MS'}} className="text-base font-normal text-gray-500 dark:text-gray-400 ">
         <br/><br />Project Zomboid<br /><br /></p>
       </div>
       <div style={{display: "flex", justifyContent: "center"}}>
@@ -58,7 +60,7 @@ export default function PonsChoice() {
       src="/Project Zomboid.png" alt='Project Zomboid'
       width="500" height="50"
       loading="eager"/>
-      </div>
+      </div></Link>
       <div style={{display: "flex", 
         justifyContent: "center"}}>
       <p style={{textAlign: 
@@ -72,8 +74,8 @@ export default function PonsChoice() {
       for no matter what you do, your death is guaranteed for this <b>is the story of how you died</b>
        </p> 
             </div>
-      <div style={{display: "flex", justifyContent: "center"}}>
-      <p style={{textAlign: "center", color: '#d1d3d3dc', fontFamily: 'Comic Sans MS'}} className="text-base font-normal text-gray-500 dark:text-gray-400 ">
+      <Link href="https://store.steampowered.com/app/1671210/DELTARUNE/"><div style={{display: "flex", justifyContent: "center"}}>
+      <p style={{textAlign: "center", color: '#012b2bdc', fontFamily: 'Comic Sans MS'}} className="text-base font-normal text-gray-500 dark:text-gray-400 ">
         <br/><br />Umamusume Pretty Derby<br /><br /></p>
       </div>
       <div style={{display: "flex", justifyContent: "center"}}>
@@ -82,7 +84,7 @@ export default function PonsChoice() {
       width="500" height="50"
       loading="eager"
       />
-      </div>
+      </div></Link>
       <div style={{display: "flex", 
         justifyContent: "center"}}>
       <p style={{textAlign: 
