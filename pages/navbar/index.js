@@ -63,11 +63,11 @@ export default function Navbar() {
                             </div>
                         )}
                     </div>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded mr-2"
+                    <a href="/about" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded mr-2"
                     style={{ backgroundColor: '#253047ff', color: '#29edb6ff', fontFamily:'Comic Sans MS' }}
                     onMouseEnter={(e) => e.target.style.backgroundColor = '#00adee'}
                     onMouseLeave={(e) => e.target.style.backgroundColor = '#253047ff'}>About</a>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded mr-2"
+                    <a href="/support" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded mr-2"
                     style={{ backgroundColor: '#253047ff', color: '#29edb6ff', fontFamily:'Comic Sans MS' }}
                     onMouseEnter={(e) => e.target.style.backgroundColor = '#00adee'}
                     onMouseLeave={(e) => e.target.style.backgroundColor = '#253047ff'}>Support</a>
