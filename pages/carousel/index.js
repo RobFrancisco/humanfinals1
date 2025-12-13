@@ -1,6 +1,7 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
+import Link from "next/link";
 
 export default function AutoCarousel() {
   const slides = [
@@ -57,7 +58,7 @@ export default function AutoCarousel() {
 
               {/* Text */}
               <div className="sm:w-1/2 text-center sm:text-left">
-                <h2 className="text-xl font-bold mb-2">{slide.title}</h2>
+                <Link href=""><h2 className="text-xl font-bold mb-2">{slide.title}</h2></Link>
                 <p className="text-gray-600 mb-2">{slide.description}</p>
                 <span className="text-lg font-semibold text-green-600">
                   {slide.price}
